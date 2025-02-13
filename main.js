@@ -20,8 +20,13 @@ Nota: Non è necessario provvedere alla validazione delle email
 
 //- e-mail array-
 const mailList = ["yacufojeddo-5843@yopmail.com", "citefeubosu-3756@yopmail.com", "xinocrarauje-2934@yopmail.com", "pixiprappalu-2459@yopmail.com", "dimmelo12@gmail.com"]
-console.log(mailList);
 //- prompt userMail
 const userMail = prompt("Type your e-mail example of email format:pincopallino@yopmail.com")
-console.log(userMail);
-
+//- for loop to check IF it's belong (includes in for loop)
+for (let i = 0; i < mailList.length; i++) {
+    const thisMail = mailList[i]
+    if (userMail === thisMail) {
+        //- log result
+        console.log("e-mail found! Acces granted.");
+    }
+}
