@@ -5,3 +5,4 @@ Nota: Non è necessario provvedere alla validazione delle email */
 
 const mailList = ["yacufojeddo-5843@yopmail.com", "citefeubosu-3756@yopmail.com", "xinocrarauje-2934@yopmail.com", "pixiprappalu-2459@yopmail.com", "dimmelo12@gmail.com"]
 const userMail = prompt("Type your e-mail")
+console.log(mailList.includes(userMail));
