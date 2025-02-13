@@ -6,3 +6,6 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. St
 - IF to check who won (larger number wins)
 */
 
+//- math random for user and computer numbers
+const userNumber = Math.random() * 100
+const computerNumber = Math.random() * 100
