@@ -27,6 +27,6 @@ for (let i = 0; i < mailList.length; i++) {
     const thisMail = mailList[i]
     if (userMail === thisMail) {
         //- log result
-        console.log("e-mail found! Acces granted.");
+        console.log("e-mail confirmed! Acces granted.");
     }
 }
