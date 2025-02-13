@@ -22,7 +22,7 @@ Nota: Non è necessario provvedere alla validazione delle email
 const mailList = ["yacufojeddo-5843@yopmail.com", "citefeubosu-3756@yopmail.com", "xinocrarauje-2934@yopmail.com", "pixiprappalu-2459@yopmail.com", "dimmelo12@gmail.com"]
 //- prompt userMail
 const userMail = prompt("Type your e-mail example of email format:pincopallino@yopmail.com")
-//- for loop to check IF it's belong (includes in for loop)
+//- for loop to check IF it belongs in the array (includes with for loop method)
 for (let i = 0; i < mailList.length; i++) {
     const thisMail = mailList[i]
     if (userMail === thisMail) {
