@@ -8,14 +8,14 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. St
 */
 
 //- math random for user and computer numbers
-const userNumber = Math.random() * 6
-const computerNumber = Math.random() * 6
+const userNumber = Math.ceil(Math.random() * 6)
+const computerNumber = Math.ceil(Math.random() * 6)
 //- log the FIXED numbers 
-console.log(`Player number is ${userNumber.toFixed()} and Computer number is ${computerNumber.toFixed()}`);
+console.log(`Player number is ${userNumber} and Computer number is ${computerNumber}`);
 //- IF to check who won (larger number wins)
 if (userNumber > computerNumber) {
     console.log("user wins!");
-} else if (computerNumber > userNumber) {
+} else if (userNumber < computerNumber) {
     console.log("computer wins!");
 } else {
     console.log("draw");
