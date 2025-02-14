@@ -15,6 +15,8 @@ console.log(userNumber.toFixed(), computerNumber.toFixed());
 //- IF to check who won (larger number wins)
 if (userNumber > computerNumber) {
     console.log("user wins!");
-} else {
+} else if (computerNumber > userNumber) {
     console.log("computer wins!");
+} else {
+    console.log("draw");
 }
