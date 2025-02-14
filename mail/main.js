@@ -22,15 +22,21 @@ Nota: Non è necessario provvedere alla validazione delle email
 const mailList = ["yacufojeddo-5843@yopmail.com", "citefeubosu-3756@yopmail.com", "xinocrarauje-2934@yopmail.com", "pixiprappalu-2459@yopmail.com", "dimmelo@gmail.com"]
 //- prompt userMail
 const userMail = String(prompt("Type your e-mail example of email format:pincopallino@yopmail.com"))
+let accessGranted = false
 //- for loop to check IF it belongs in the array (includes with for loop method)
 for (let i = 0; i < mailList.length; i++) {
     const thisMail = mailList[i]
-    if (userMail === thisMail) {
+    if (thisMail === userMail) {
         //- log result
-        console.log("e-mail confirmed! Acces granted.");
-    } else {
-        console.log("error,retry!");
-
+        accessGranted = true
+        break
     }
+}
+if (accessGranted) {
+    console.log("Access granted!");
+
+} else {
+    console.log("Access denied!");
+
 }
 
