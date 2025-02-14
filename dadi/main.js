@@ -11,7 +11,7 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. St
 const userNumber = Math.random() * 100
 const computerNumber = Math.random() * 100
 //- log the FIXED numbers 
-console.log(userNumber.toFixed(), computerNumber.toFixed());
+console.log(`Player number is ${userNumber.toFixed()} and Computer number is ${computerNumber.toFixed()}`);
 //- IF to check who won (larger number wins)
 if (userNumber > computerNumber) {
     console.log("user wins!");
